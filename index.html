@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CRCとは？｜チャイルドリアリングコーチ®</title>
+<meta name="description" content="「もっと早く知りたかった！」を今の子育てに。CRCは、0〜10歳の発達・心理、イヤイヤ期の対応、親子のふれあい、ママの心まで幅広く学ぶ実践講座です。">
+<meta name="theme-color" content="#FAFDFF">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="CRCとは？｜チャイルドリアリングコーチ®">
+<meta property="og:description" content="「もっと早く知りたかった！」を今の子育てに。CRCは、0〜10歳の発達・心理、イヤイヤ期の対応、親子のふれあい、ママの心まで幅広く学ぶ実践講座です。">
+<style>
+:root{
+  --white:#FFFFFF;
+  --ivory:#FAFDFF;
+  --teal-pale:#DDEFFA;
+  --teal:#2474B5;
+  --teal-deep:#245A98;
+  --pink-pale:#F9E5EB;
+  --pink-deep:#B35E7D;
+  --lav:#F2F0FB;
+  --yellow:#F4C94A;
+  --text:#30414E;
+  --text-soft:#586B78;
+  --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;
+  --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Noto Sans CJK JP",Meiryo,sans-serif;
+  --shadow:0 8px 24px rgba(36,116,181,.12),0 1px 3px rgba(36,70,100,.05);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  margin:0;font-family:var(--sans);font-size:16px;line-height:1.95;letter-spacing:.03em;
+  color:var(--text);background:var(--ivory);
+  line-break:strict;word-break:auto-phrase;overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+p{margin:0}
+h1,h2,h3{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.ph{display:inline-block}
+
+/* ---------- layout ---------- */
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 22px}
+.narrow{max-width:600px;margin-left:auto;margin-right:auto}
+.sec{position:relative;padding:60px 0 52px;overflow:hidden}
+.wave::before{
+  content:"";position:absolute;left:0;right:0;top:-1px;height:30px;background:var(--prev);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 0h1440v18c-240 40-480 44-720 22S240 8 0 30z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 0h1440v18c-240 40-480 44-720 22S240 8 0 30z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+}
+
+/* ---------- common parts ---------- */
+.sec-head{text-align:center;margin-bottom:24px}
+.orn{display:flex;justify-content:center;align-items:center;gap:9px;margin-bottom:12px}
+.orn i{width:34px;height:1px;background:var(--teal);opacity:.55}
+.orn b{
+  width:11px;height:11px;border-radius:50%;
+  background:radial-gradient(circle,#E2644B 0 22%,transparent 26%),var(--yellow);
+  box-shadow:0 0 0 3px rgba(244,201,74,.25);
+}
+h2{
+  font-family:var(--serif);font-weight:700;letter-spacing:.05em;line-height:1.7;
+  font-size:clamp(20px,5.7vw,30px);
+}
+h3.sub-title{
+  font-family:var(--serif);font-weight:700;letter-spacing:.05em;line-height:1.7;text-align:center;
+  font-size:clamp(19px,5.2vw,26px);margin-bottom:18px;
+}
+.em{color:var(--teal-deep)}
+.em-pink{color:var(--pink-deep)}
+.mk{background:linear-gradient(transparent 62%,rgba(249,229,235,.95) 62%)}
+.mk-teal{background:linear-gradient(transparent 62%,rgba(221,239,250,.95) 62%)}
+.lead{font-size:16px;line-height:1.9}
+.stack>*+*{margin-top:1.1em}
+.center{text-align:center}
+
+.art{position:relative;isolation:isolate;width:min(100%,300px);margin:0 auto}
+.art::before{
+  content:"";position:absolute;inset:6% 4%;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side,var(--blob,rgba(249,229,235,.9)),rgba(255,255,255,0));
+}
+.art.blob-lav{--blob:rgba(240,231,247,.95)}
+.art.blob-teal{--blob:rgba(221,239,250,.95)}
+.art.blob-pink{--blob:rgba(249,229,235,.95)}
+
+/* ---------- 1. hero ---------- */
+.hero{
+  padding:30px 0 36px;
+  background:
+    radial-gradient(90% 46% at 100% 0%,rgba(222,237,255,.88),rgba(222,237,255,0) 70%),
+    radial-gradient(80% 40% at 0% 46%,rgba(237,243,255,.84),rgba(237,243,255,0) 70%),
+    var(--ivory);
+}
+.hero-inner{display:grid;gap:14px;justify-items:center;text-align:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--serif);font-size:13px;letter-spacing:.14em;color:var(--teal-deep);
+}
+.eyebrow::before{
+  content:"";width:10px;height:10px;border-radius:50%;flex:none;
+  background:radial-gradient(circle,#E2644B 0 22%,transparent 26%),var(--yellow);
+  box-shadow:0 0 0 3px rgba(244,201,74,.25);
+}
+.hero-copy{
+  margin-top:10px;font-family:var(--serif);font-weight:700;letter-spacing:.04em;line-height:1.8;
+  font-size:clamp(17px,5vw,38px);
+}
+.hero-copy .ln{display:block}
+.hero-sub{margin-top:16px;font-size:15px;line-height:2;color:var(--text-soft)}
+.hero .art{width:min(100%,340px);margin-top:0}
+.page-title{display:flex;justify-content:center;margin-top:20px}
+.page-title span{
+  display:inline-block;max-width:100%;padding:6px 0 13px;color:var(--teal-deep);
+  font-family:var(--serif);font-weight:700;letter-spacing:.04em;line-height:1.55;text-align:center;
+  font-size:clamp(18px,5.1vw,25px);
+  background:transparent;border-bottom:2px solid #9BCFDA;box-shadow:none;
+}
+
+/* ---------- 2. empathy ---------- */
+.s-empathy{background:var(--white);--prev:var(--ivory)}
+.bubbles{display:grid;gap:10px;max-width:560px;margin:0 auto 26px}
+.bubble{
+  position:relative;width:min(92%,100%);padding:12px 20px 12px 44px;border-radius:20px;
+  font-weight:500;font-size:16px;line-height:1.8;box-shadow:var(--shadow);
+}
+.bubble::before{
+  content:"“";position:absolute;left:16px;top:6px;font-family:var(--serif);
+  font-size:36px;line-height:1;color:var(--pink-deep);opacity:.55;
+}
+.bubble:nth-child(odd){background:var(--pink-pale);justify-self:start;border-bottom-left-radius:6px}
+.bubble:nth-child(even){background:var(--lav);justify-self:end;border-bottom-right-radius:6px}
+.pull{
+  margin:20px auto;padding:18px 18px;max-width:560px;text-align:center;border-radius:24px;
+  background:linear-gradient(160deg,var(--ivory),var(--teal-pale));
+  font-family:var(--serif);font-weight:700;font-size:clamp(17px,4.8vw,22px);line-height:1.8;
+}
+
+/* ---------- 3. CRC + 3 powers ---------- */
+.s-what{background:var(--ivory);--prev:var(--white)}
+.contrast{display:grid;gap:10px;margin:20px 0}
+.q{padding:13px 18px;border-radius:18px;text-align:center}
+.q p{line-height:1.8}
+.q-from{border:1.5px dashed rgba(88,107,120,.35);color:var(--text-soft);background:rgba(221,239,250,.45)}
+.q-to{background:var(--white);box-shadow:var(--shadow);border:1.5px solid rgba(36,116,181,.35)}
+.q-to strong{display:block;font-family:var(--serif);font-size:clamp(17px,4.8vw,20px);color:var(--teal-deep);margin-bottom:2px}
+.q .tail{font-size:14.5px}
+.statement{
+  margin:20px 0 0;padding:20px 18px;text-align:center;border-radius:24px;background:var(--teal-pale);
+  font-family:var(--serif);font-weight:700;font-size:clamp(17px,4.8vw,22px);line-height:1.85;
+}
+.powers{margin-top:48px}
+.power{display:grid;gap:14px;margin-bottom:32px;align-items:center}
+.power:last-child{margin-bottom:0}
+.cards{display:grid;gap:12px}
+.card{
+  padding:18px 20px 16px;border-radius:22px;background:var(--white);
+  box-shadow:var(--shadow);border:1px solid rgba(36,116,181,.12);
+}
+.card h3{
+  display:flex;align-items:center;gap:12px;margin-bottom:10px;
+  font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.5;letter-spacing:.05em;
+}
+.num{
+  flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;color:#fff;
+  font-family:var(--serif);font-size:16px;line-height:1;
+  background:linear-gradient(135deg,#245A98,#3389D2);
+}
+.card p{font-size:15.5px;line-height:1.85;color:var(--text)}
+.eg{
+  margin-top:10px;padding:9px 13px 10px;border-radius:14px;background:rgba(240,231,247,.6);
+  font-size:14.5px;line-height:1.85;
+}
+.eg b{display:block;margin-bottom:2px;font-family:var(--serif);font-size:13px;letter-spacing:.14em;color:var(--pink-deep)}
+
+/* ---------- 4. change + together ---------- */
+.s-change{background:var(--teal-pale);--prev:var(--ivory)}
+.split{display:grid;gap:14px;align-items:center}
+.shift{display:grid;gap:9px}
+.shift li{
+  padding:11px 16px 13px;border-radius:18px;text-align:center;background:var(--white);
+  border:1px solid rgba(179,94,125,.14);box-shadow:0 4px 14px rgba(179,94,125,.07);
+}
+.shift .from{display:block;font-size:13.5px;color:var(--text-soft);line-height:1.6}
+.shift .from::after{
+  content:"";display:block;width:0;height:0;margin:4px auto 3px;
+  border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--pink-deep);opacity:.75;
+}
+.shift .to{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(16.5px,4.6vw,19px);line-height:1.6;color:var(--teal-deep)}
+.closing{margin-top:26px;text-align:center}
+.closing .big{font-family:var(--serif);font-weight:700;font-size:clamp(18px,5vw,22px);line-height:1.8}
+.closing p+p{margin-top:.4em}
+.together{margin-top:48px}
+.chips{display:grid;gap:10px;margin:16px 0 0}
+.chip{
+  padding:11px 20px;border-radius:999px;text-align:center;background:var(--white);box-shadow:var(--shadow);
+  font-family:var(--serif);font-weight:700;font-size:clamp(16px,4.5vw,18px);color:var(--teal-deep);
+}
+.small-note{margin-top:20px;text-align:center;font-size:13.5px;line-height:1.9;color:var(--text-soft)}
+
+/* ---------- 5. founder ---------- */
+.s-founder{background:linear-gradient(180deg,var(--pink-pale) 0%,var(--lav) 100%);--prev:var(--teal-pale)}
+.founder-card{
+  padding:28px 22px 24px;border-radius:28px;background:rgba(255,255,255,.92);
+  box-shadow:0 14px 36px rgba(140,100,170,.14);
+}
+.founder-card .msg>p{font-size:16px;line-height:1.95}
+.founder-card .msg>p+p{margin-top:.7em}
+.founder-card .msg .last{margin-top:1.4em;font-family:var(--serif);font-weight:700;color:var(--teal-deep)}
+.sign{margin-top:22px;padding-top:16px;border-top:1px solid rgba(36,116,181,.22);text-align:right;line-height:1.7}
+.sign-brand{display:block;font-size:13.5px;color:var(--text-soft)}
+.sign-name{display:block;font-family:var(--serif);font-size:clamp(17px,4.8vw,20px);font-weight:700}
+.profile{margin-top:20px;padding:14px 18px;border-radius:18px;background:var(--ivory)}
+.profile h3{font-family:var(--serif);font-size:14px;letter-spacing:.14em;color:var(--teal-deep);margin-bottom:8px}
+.profile li{position:relative;padding-left:20px;font-size:14.5px;line-height:1.85}
+.profile li+li{margin-top:6px}
+.profile li::before{
+  content:"";position:absolute;left:2px;top:.72em;width:8px;height:8px;border-radius:50%;
+  background:var(--yellow);box-shadow:0 0 0 3px rgba(244,201,74,.22);
+}
+
+/* ---------- 6. final ---------- */
+.s-final{background:var(--ivory);--prev:var(--lav);padding-bottom:44px}
+.final-copy{
+  text-align:center;font-family:var(--serif);font-weight:700;line-height:1.85;letter-spacing:.05em;
+  font-size:clamp(20px,5.7vw,34px);
+}
+.final-copy .ln{display:block}
+.final-body{margin:18px auto 0;max-width:520px;text-align:center}
+.final-body p+p{margin-top:.6em}
+.s-final .art{width:min(100%,320px);margin-top:18px}
+.cta-wrap{margin-top:22px;text-align:center}
+.cta-lead{margin-bottom:12px;font-size:15px;line-height:1.9;color:var(--text-soft)}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;max-width:100%;
+  min-height:58px;padding:15px 26px;border-radius:999px;color:#fff;text-decoration:none;
+  font-family:var(--sans);font-weight:700;font-size:clamp(14.5px,4.2vw,18px);letter-spacing:.04em;line-height:1.5;white-space:nowrap;
+  background:linear-gradient(135deg,#245A98,#2474B5);
+  box-shadow:0 12px 26px rgba(36,116,181,.32);transition:transform .2s ease,box-shadow .2s ease;
+}
+.cta svg{flex:none;width:22px;height:22px}
+.cta.is-ready:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(36,116,181,.36)}
+.cta.is-ready:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.cta:not(.is-ready){background:#A7B3BF;box-shadow:none;cursor:not-allowed}
+.cta-note{margin-top:12px;font-size:12.5px;line-height:1.7;color:var(--text-soft)}
+.cta-note[hidden]{display:none}
+
+footer{padding:18px 22px 32px;text-align:center;background:var(--ivory)}
+footer p{font-family:var(--serif);font-size:12.5px;letter-spacing:.14em;color:var(--text-soft)}
+
+/* ---------- desktop ---------- */
+@media (min-width:900px){
+  .wrap{padding:0 32px}
+  .sec{padding:104px 0 92px}
+  .art{width:min(100%,420px)}
+  .split{gap:64px}
+  .wave::before{height:46px}
+  .sec-head{margin-bottom:44px}
+  h2{font-size:32px}
+  h3.sub-title{font-size:26px;margin-bottom:34px}
+  .lead{font-size:17px}
+  .hero{padding:72px 0 64px}
+  .hero-inner{grid-template-columns:1.1fr .9fr;gap:56px;text-align:left;justify-items:stretch;align-items:center}
+  .eyebrow{font-size:14px}
+  .hero-copy{font-size:30px;margin-top:18px}
+  .hero-sub{font-size:16.5px;margin-top:22px}
+  .hero .art{width:min(100%,460px);margin:0 auto}
+  .page-title{margin-top:52px}
+  .page-title span{padding:6px 3px 14px;font-size:25px;letter-spacing:.08em}
+  .bubbles{grid-template-columns:1fr 1fr;max-width:760px;gap:18px}
+  .bubble{width:100%;justify-self:stretch !important}
+  .power{grid-template-columns:1fr 1fr;gap:64px;margin-bottom:72px}
+  .power.rev .art{order:2}
+  .split{grid-template-columns:1fr 1fr;gap:64px}
+  .split.flip .art{order:2}
+  .shift{gap:14px}
+  .contrast{grid-template-columns:1fr 1fr;align-items:stretch}
+  .founder-card{padding:48px 56px 38px}
+  .s-final .art{width:min(100%,460px)}
+}
+@media (max-width:359px){
+  .wrap{padding:0 16px}
+  .bubble{padding-left:42px}
+  .page-title span{padding:5px 0 12px;font-size:17px;letter-spacing:.01em}
+  .cta{padding:14px 18px;font-size:14px;gap:8px}
+}
+@media (prefers-reduced-motion:reduce){.cta{transition:none}}
+
+/* ---------- CRC brand refinements ---------- */
+body{background:#FAFDFF}
+.page-title span{border-radius:0;cursor:default}
+.hero{background:radial-gradient(90% 55% at 100% 0%,rgba(221,239,250,.9),transparent 75%),radial-gradient(74% 48% at 0% 80%,rgba(249,229,235,.45),transparent 72%),#FAFDFF}
+.orn i{background:#2474B5}
+.orn b,.eyebrow::before{background:radial-gradient(circle,#E2644B 0 22%,transparent 26%),#F4C94A}
+.future-kicker{font-size:14px;letter-spacing:.1em;color:var(--teal-deep);margin-bottom:8px}
+.closing{max-width:680px;margin-left:auto;margin-right:auto}
+.closing .lead{max-width:560px;margin:14px auto 0}
+/* Testimonials: match the existing round cards while prioritizing real voices */
+.s-voices{background:#FFFFFF;--prev:var(--teal-pale)}
+.section-eyebrow{text-align:center;color:#2474B5;font-size:11px;letter-spacing:.23em;font-weight:700;margin-bottom:4px}
+.voice-intro{text-align:center;color:var(--text-soft);font-size:14.5px;line-height:1.85;margin-top:14px}
+.voice-grid{display:grid;gap:18px;max-width:930px;margin:0 auto}
+.voice-card{border:1px solid #D8E9F6;border-radius:24px;background:linear-gradient(165deg,#F8FCFF,#FFFFFF 52%,#FFF9FC);box-shadow:0 10px 26px rgba(36,116,181,.09);padding:22px 20px 24px;min-width:0}
+.voice-portrait{width:min(70%,195px);height:auto;margin:0 auto 16px;display:block;border-radius:15px}
+.voice-content{min-width:0}
+.voice-label{display:table;color:#245A98;font-size:12.5px;font-weight:700;letter-spacing:.06em;background:#DDEFFA;padding:3px 12px;border-radius:999px;margin-bottom:10px}
+.voice-card h3{font-family:var(--serif);font-weight:700;font-size:17.5px;line-height:1.65;color:#245A98;margin-bottom:10px}
+.voice-before{font-size:14px;line-height:1.85;color:var(--text-soft)}
+.voice-quote{border-left:3px solid #9BCFDA;margin:16px 0 0;padding:8px 4px 8px 14px;font-family:var(--serif);font-size:16.5px;font-weight:700;line-height:1.85;color:#304E70}
+.voice-name{font-size:13px;font-weight:700;color:#245A98;text-align:right;margin-top:14px}
+.voice-name span{font-weight:400;color:var(--text-soft);font-size:12px}
+.voice-footnote{font-size:12px;color:var(--text-soft);text-align:center;max-width:680px;line-height:1.75;margin:22px auto 0}
+/* Founder illustration */
+.s-founder{--prev:#FFFFFF}
+.founder-card{max-width:850px;margin:0 auto;display:grid;gap:18px;padding:28px 22px 26px;align-items:center}
+.founder-portrait{margin:0 auto;width:min(100%,275px)}
+.founder-portrait img{width:100%;height:auto;border-radius:18px}
+.founder-main{min-width:0}
+.sign{text-align:left}
+.sign-name{color:#245A98}
+/* CTA: one real button, clear disclosure and next-step language */
+.cta-wrap{max-width:650px;margin:28px auto 0;padding:28px 19px;border-radius:25px;border:1px solid #CBDFEF;background:#F1F7FC;box-shadow:0 7px 24px rgba(36,116,181,.07)}
+.cta-kicker{color:#2474B5;font-size:11px;font-weight:700;letter-spacing:.18em;margin-bottom:11px}
+.cta-title{font-family:var(--serif);font-size:clamp(19px,5vw,25px);color:#245A98;line-height:1.7;margin-bottom:14px}
+.cta-lead{color:#334C60;font-size:15px;line-height:1.95;margin-bottom:12px}
+.cta-explain{font-size:14px;color:#526474;margin-bottom:18px}
+.cta{white-space:normal;width:100%;max-width:500px;min-height:60px;background:linear-gradient(135deg,#245A98,#2474B5);text-align:center;line-height:1.55;padding:14px 14px;box-shadow:0 10px 23px rgba(36,116,181,.25)}
+.cta:not(.is-ready){background:linear-gradient(135deg,#245A98,#2474B5);box-shadow:0 10px 23px rgba(36,116,181,.22);opacity:.92;cursor:not-allowed}
+.cta-assurance{font-size:12.5px;color:#526474;margin:13px auto 4px;line-height:1.75}
+.cta-note{color:#785D5D;font-size:12.5px}
+.cta-fallback{font-size:12px;color:#677887;margin-top:12px;line-height:1.8}
+@media (min-width:720px){
+  .voice-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+  .voice-card{padding:28px 26px}
+  .founder-card{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:34px;padding:35px 38px}
+  .founder-portrait{width:100%;max-width:310px}
+}
+@media (max-width:359px){
+  .cta{font-size:13.5px;gap:6px;padding:13px 10px}
+  .voice-card{padding:20px 16px}
+}
+
+/* 親子のふれあいからCRCへ：入口を見せる小さな情報カード */
+.baby-entry{display:flex;gap:13px;align-items:flex-start;margin:24px 0 0;padding:19px 18px;border:1px solid #BBD8EE;background:linear-gradient(135deg,#F7FCFF,#FFFFFF);border-radius:20px;box-shadow:0 5px 16px rgba(36,116,181,.07)}
+.baby-entry-icon{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:50%;background:#F9E5EB;color:#B35E7D;font-size:29px;line-height:1}
+.baby-entry h3{font-family:var(--serif);font-size:17px;line-height:1.5;color:#245A98;margin:0 0 7px}
+.baby-entry p{font-size:14px;line-height:1.9;color:#3C556A}
+.voice-before strong{color:#245A98}
+.voice-portrait{border-radius:50%;background:radial-gradient(circle,#EDF7FD,#FFFFFF);width:min(69%,184px)}
+@media(min-width:900px){.baby-entry{padding:22px 24px}}
+
+/* ---------- 新構成：悩みの入口 → 学べる4例 → 広がる学び ---------- */
+.intro-what{display:grid;gap:9px;align-items:center;max-width:860px;margin:0 auto}
+.intro-copy{max-width:580px;margin:0 auto;text-align:center}
+.intro-copy .lead+.lead{margin-top:9px}
+.intro-copy strong{color:var(--teal-deep)}
+.intro-what .art{width:min(74%,240px);margin:5px auto 0}
+.learning{margin:30px auto 0;max-width:930px}
+.learning-eyebrow{text-align:center;color:var(--teal);font-size:13px;letter-spacing:.075em;font-weight:700;margin-bottom:10px}
+.learning-title{font-family:var(--serif);font-size:clamp(20px,5.3vw,28px);line-height:1.75;text-align:center;letter-spacing:.03em;margin-bottom:25px}
+.learning-grid{display:grid;gap:14px}
+.learning-card{min-width:0;padding:21px 20px 24px;border-radius:22px;background:#fff;border:1px solid #D1E6F6;box-shadow:0 8px 22px rgba(36,116,181,.075);position:relative;overflow:hidden}
+.learning-card::before{content:"";height:4px;position:absolute;top:0;left:0;right:0;background:linear-gradient(90deg,#2474B5,#ADD8F5,#F7D8E7)}
+.learning-card .learning-category{color:#6B7B89;font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:10px}
+.learning-category span{font-size:14px;font-family:var(--serif);color:#2474B5;margin-right:6px}
+.learning-card h4{margin:0;font-family:var(--serif);color:#245A98;font-size:clamp(17px,4.6vw,20px);line-height:1.8;font-weight:700;letter-spacing:.015em}
+.learning-mark{display:inline-block;max-width:100%;background:linear-gradient(transparent 67%,#E0EEF9 67%)}
+.more-learning{margin:28px auto 0;max-width:940px;padding:25px 22px;border-radius:26px;background:linear-gradient(140deg,#E4F2FC,#F6FBFF 65%,#FFF9FC);display:grid;gap:10px;align-items:center}
+.more-learning h3{font-family:var(--serif);font-size:clamp(20px,5vw,26px);line-height:1.75;margin:0 0 14px}
+.more-learning p{font-size:15px;line-height:1.9}
+.more-learning-copy>p+p{margin-top:10px}
+.more-learning .more-learning-kicker{font-size:11px;font-weight:700;letter-spacing:.18em;color:#2474B5;margin-bottom:4px}
+.more-learning .art{width:min(75%,230px)}
+.professional-note{border-left:3px solid #2474B5;background:rgba(255,255,255,.78);padding:13px 15px;border-radius:0 12px 12px 0;margin-top:18px}
+.professional-note .professional-note-label{font-weight:700;color:#245A98;font-size:14px;margin-bottom:5px}
+.professional-note p:last-child{font-size:13.5px;line-height:1.85;color:#455969}
+.change-intro{margin:14px auto 0;color:#526777;font-size:15px;text-align:center}
+.shift .from{font-size:14px}
+.shift .to{font-size:clamp(17px,4.5vw,19px)}
+@media(min-width:700px){
+ .intro-what{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:24px}
+ .intro-copy{text-align:left}
+ .intro-what .art{width:min(100%,240px)}
+ .learning-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .learning-card{padding:25px 25px 28px}
+ .more-learning{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:24px;padding:30px 32px}
+ .more-learning .art{width:min(100%,275px)}
+}
+@media(max-width:359px){
+ .learning-card{padding:18px 15px 20px}
+ .learning-card h4{font-size:16.5px}
+ .more-learning{padding:22px 16px}
+}
+
+/* ---------- 最終CTA（共感→疑問→相談） ---------- */
+.cta-wrap{padding:31px 19px 28px;background:linear-gradient(170deg,#EDF6FC 0%,#F8FCFF 76%,#FFF9FC 100%)}
+.cta-title{font-size:clamp(19px,5vw,27px);line-height:1.75;margin-bottom:17px;letter-spacing:.012em}
+.cta-title-second{color:#245A98}
+.cta-emotion{font-family:var(--serif);color:#245A98;font-size:clamp(15.5px,4.2vw,18px);font-weight:700;line-height:1.95;margin:18px auto;max-width:560px}
+.cta-emotion strong{background:linear-gradient(transparent 65%,#F9E5EB 65%)}
+.cta-wrap .cta-lead{max-width:560px;margin:0 auto 12px}
+.cta-wrap .cta-explain{max-width:560px;margin-bottom:23px;color:#455B6D}
+.cta-steps{margin:11px auto 5px;color:#526474;font-size:12.5px;line-height:1.7}
+.cta-assurance{margin:12px auto 3px;font-weight:600}
+@media(max-width:359px){
+  .cta-title{font-size:18.5px}
+  .cta-emotion{font-size:15.5px}
+  .cta{font-size:13px}
+}
+
+/* PCからはLINEトーク直リンクが非対応のため、QRコードを案内します。 */
+.desktop-line-panel{max-width:420px;margin:20px auto 6px;padding:19px 18px 22px;border:1px solid #BFD9EF;background:#FFFFFF;border-radius:18px;box-shadow:0 6px 18px rgba(36,116,181,.10);text-align:center}
+.desktop-line-panel[hidden]{display:none!important}
+.desktop-line-panel h4{font-size:17px;line-height:1.65;color:#245A98;margin:0 0 7px}
+.desktop-line-panel p{font-size:13px;color:#445C70;line-height:1.8;margin:0 auto 10px}
+.desktop-line-qr{display:block;width:204px;height:204px;max-width:100%;margin:8px auto 12px;border:1px solid #DAE9F3;border-radius:8px}
+.desktop-line-id{display:block;font-weight:700;font-size:15px;color:#245A98;letter-spacing:.08em}
+.desktop-line-panel .desktop-line-hint{font-size:12px;margin-top:7px;color:#6B7D8B}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. ファーストビュー ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Child Rearing Coach® / CRC</p>
+        <h1 class="hero-copy">
+          <span class="ln">「この子、大丈夫？」も、</span>
+          <span class="ln">「また怒っちゃった…」も。</span>
+          <span class="ln"><span class="em mk"><span class="ph">今の「困った」に</span><span class="ph">向き合う学びを。</span></span></span>
+        </h1>
+        <p class="hero-sub">「もっと早く知っていれば…」と後悔する前に。<br>0〜10歳の発達・心理、親子のふれあい、ママの心まで。<br>今の子育てに役立つ学びを、ここから。</p>
+      </div>
+      <figure class="art blob-pink">
+        <img src="images/crc-01-hug.webp" width="960" height="960" fetchpriority="high" decoding="async"
+             alt="目を閉じて、やさしく抱き合う母と子。まわりにはラベンダーと黄色いハイビスカスが咲いています。">
+      </figure>
+    </div>
+    <p class="page-title"><span>チャイルドリアリングコーチ®とは？</span></p>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 2. 共感 ============ -->
+<section class="sec s-empathy wave" aria-labelledby="h-empathy">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <h2 id="h-empathy">こんな気持ち、ありませんか？</h2>
+    </div>
+
+    <ul class="bubbles">
+      <li class="bubble">イヤイヤや癇癪、どう対応したらいい？</li>
+      <li class="bubble">調べても、わが子に合う方法がわからない…</li>
+      <li class="bubble">ベビーマッサージで親子の時間をもっと楽しみたい</li>
+      <li class="bubble">子育ての知識を、もっと自分の力にしたい</li>
+    </ul>
+
+    <div class="narrow stack center">
+      <p class="lead">悩みの入口も、学んでみたい理由も人それぞれ。</p>
+      <p class="lead">でも、<strong>「今よりもっと、子育てを楽しみたい」</strong>。<br>そんな思いを、CRCは大切にしています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. 具体的に学べる一例 ============ -->
+<section class="sec s-what wave" aria-labelledby="h-what">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <h2 id="h-what">CRCって、<span class="em">何を学べるの？</span></h2>
+    </div>
+
+    <div class="intro-what">
+      <div class="intro-copy">
+        <p class="lead">「あのとき知っていれば、あんなに悩まなかったのに…」</p>
+        <p class="lead">そんな子育ての後悔を、これから少しでも減らせたら。</p>
+        <p class="lead">CRCは、<strong>0〜10歳の子どもの発達や心理、毎日の困りごとへの対応</strong>を、家庭での実践とともに学べる講座です。</p>
+      </div>
+      <figure class="art blob-lav">
+        <img src="images/crc-02-observe.webp" width="960" height="960" loading="lazy" decoding="async"
+             alt="積み木で遊ぶ子どもを、あたたかく見守る母。">
+      </figure>
+    </div>
+
+    <div class="learning" aria-labelledby="h-learning">
+      <p class="learning-eyebrow">CRCで学べることの、ほんの一例</p>
+      <h3 id="h-learning" class="learning-title">「もっと早く知りたかった！」を、<br><span class="em">今からあなたの子育てに。</span></h3>
+      <div class="learning-grid">
+        <article class="learning-card">
+          <p class="learning-category"><span aria-hidden="true">01</span> 朝のイライラ</p>
+          <h4>朝の「早くして！」を減らす！<br>イライラを左右する<span class="learning-mark">「時間の使い方」</span></h4>
+        </article>
+        <article class="learning-card">
+          <p class="learning-category"><span aria-hidden="true">02</span> イヤイヤ期</p>
+          <h4>思春期の親子関係にもつながる！<br>イヤイヤ期の<span class="learning-mark">「正しい対処法」</span></h4>
+        </article>
+        <article class="learning-card">
+          <p class="learning-category"><span aria-hidden="true">03</span> 発達への不安</p>
+          <h4>「この子、大丈夫？」の答えは検索しても見つからない！？<br>不安を減らすために知っておきたい<span class="learning-mark">発達の判断ポイント</span></h4>
+        </article>
+        <article class="learning-card">
+          <p class="learning-category"><span aria-hidden="true">04</span> ベビーマッサージ・親子のふれあい</p>
+          <h4>ベビーマッサージだけで終わらない！<br>0〜10歳の親子関係を育む<br><span class="learning-mark">「ふれあい」の実践法</span></h4>
+        </article>
+      </div>
+    </div>
+
+    <div class="more-learning">
+      <div class="more-learning-copy">
+        <p class="more-learning-kicker">AND MORE...</p>
+        <h3>もちろん、学べるのは<br><span class="em">これだけではありません。</span></h3>
+        <p>子どもの成長に合わせた発達・心理の学び、スキンケア、家族との関係、ママ自身の心や暮らしまで。</p>
+        <p><strong>多くのママがつまずきやすい子育てのポイントを、幅広く学び、家庭で活かしていきます。</strong></p>
+        <div class="professional-note">
+          <p class="professional-note-label">実は、保育士さんも学びに来ています。</p>
+          <p>育休中の保育士さんが、子育てと仕事の両方に活かせる学びを深めることも。専門職の方はもちろん、子育て中のママにも開かれた講座です。</p>
+        </div>
+      </div>
+      <figure class="art blob-pink">
+        <img src="images/crc-03-learn.webp" width="960" height="960" loading="lazy" decoding="async"
+             alt="ノートに書きとめながら、子育ての学びを深める母。">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. 学びの先の変化＋仲間 ============ -->
+<section class="sec s-change wave" aria-labelledby="h-change">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <h2 id="h-change"><span class="ph">子育てのために学び始めた。</span><br><span class="ph"><span class="em">その先の私に、</span>ちょっと驚く。</span></h2>
+      <p class="change-intro">CRCで目指すのは、知識を増やすことだけではありません。</p>
+    </div>
+
+    <div class="split">
+      <figure class="art blob-lav">
+        <img src="images/crc-05-smile.webp" width="960" height="960" loading="lazy" decoding="async"
+             alt="笑顔で子どもを抱きしめる母と、うれしそうに笑う子ども。">
+      </figure>
+      <ul class="shift">
+        <li><span class="from">「また怒っちゃった…」と落ち込む毎日から</span><span class="to">「今日は笑えた」が、少しずつ増える毎日へ。</span></li>
+        <li><span class="from">「何を信じればいいの？」と不安だった日々から</span><span class="to">わが子のために、自分で選べる安心感へ。</span></li>
+        <li><span class="from">子育てで精いっぱいだった私にも</span><span class="to">「新しいことをやってみたい！」と思える未来が。</span></li>
+      </ul>
+    </div>
+
+    <div class="closing">
+      <p class="big">目の前の困りごとをきっかけに始めた学びが、<br><span class="em-pink mk">ママ自身の自信や、未来へのワクワク</span>につながることも。</p>
+    </div>
+
+    <div class="together">
+      <h3 class="sub-title">学んだあとも、<span class="em">一人にしない。</span></h3>
+      <div class="split flip">
+        <figure class="art blob-pink">
+          <img src="images/crc-04-friends.webp" width="960" height="960" loading="lazy" decoding="async"
+               alt="お茶を飲みながら笑顔で語り合うママたち。">
+        </figure>
+        <div>
+          <div class="stack">
+            <p class="lead">学んだことを家で試してみると、新しい疑問が出てくることもあります。</p>
+            <p class="lead">CRCには質問できる機会や、同じように学ぶ仲間とのつながりも。うまくいかなかった日も、一人で抱え込まずに話せる場所を大切にしています。</p>
+          </div>
+          <div class="chips">
+            <p class="chip">「私だけじゃなかった」</p>
+            <p class="chip">「また明日、やってみよう」</p>
+          </div>
+        </div>
+      </div>
+      <p class="small-note">講座修了後も、希望する方が仲間とつながれる機会を大切にしています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. 受講生の声 ============ -->
+<section class="sec s-voices wave" aria-labelledby="h-voices">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <p class="section-eyebrow">REAL VOICES</p>
+      <h2 id="h-voices">CRCで学んだ<br><span class="em">ママたちの声</span></h2>
+      <p class="voice-intro">実際に学んだママの変化を知って、CRCに興味を持つ方もいます。<br>2人の受講生が語ってくれた言葉をご紹介します。</p>
+    </div>
+    <div class="voice-grid">
+      <article class="voice-card">
+        <img class="voice-portrait" src="images/voice_y.webp" width="640" height="640" loading="lazy" decoding="async" alt="受講生Yさんの水彩似顔絵">
+        <div class="voice-content">
+          <span class="voice-label">子育てへの不安から</span>
+          <h3>自分の子育てが正しいのか、わからなかった。</h3>
+          <p class="voice-before"><strong>受講前：</strong>仕事と育児に追われ、子どもと過ごす時間の少なさや、自分の子育てが合っているのかという不安を抱えていました。</p>
+          <blockquote class="voice-quote">「知識だけでなく、メンタル面での学びも多く、講座も毎回楽しくて気持ちが上がるんです！」</blockquote>
+          <p class="voice-name">Yさん <span>｜ 受講当時の感想</span></p>
+        </div>
+      </article>
+      <article class="voice-card">
+        <img class="voice-portrait" src="images/voice_k.webp" width="640" height="640" loading="lazy" decoding="async" alt="受講生Kさんの水彩似顔絵">
+        <div class="voice-content">
+          <span class="voice-label">自分の未来への期待へ</span>
+          <h3>仕事と家事の繰り返しで、毎日がつまらなかった。</h3>
+          <p class="voice-before"><strong>受講前：</strong>仕事と家事の繰り返しに物足りなさを感じていた日々。子育て経験を自分の強みにしたいと、学び始めました。</p>
+          <blockquote class="voice-quote">「次はなにを知れるのかな？」と未来にワクワクできるようになったんです！！</blockquote>
+          <p class="voice-name">Kさん <span>｜ 受講当時の感想</span></p>
+        </div>
+      </article>
+    </div>
+    <p class="voice-footnote">※掲載の感想は個人の体験であり、すべての方に同じ変化をお約束するものではありません。</p>
+  </div>
+</section>
+
+<!-- ============ 6. 創設者からのメッセージ ============ -->
+<section class="sec s-founder wave" aria-labelledby="h-founder">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+      <h2 id="h-founder"><span class="ph">ママの笑顔も、</span><span class="ph">ママ自身の夢も、</span><span class="ph">大切にしたい。</span></h2>
+    </div>
+
+    <div class="founder-card">
+      <figure class="founder-portrait">
+        <img src="images/nagaya_akiko.webp" width="950" height="1040" loading="lazy" decoding="async" alt="CRCユニフォームを着た創設者・永谷亜季子の水彩似顔絵">
+      </figure>
+      <div class="founder-main">
+      <div class="msg">
+        <p>子育ての不安を少しでも減らしたい。</p>
+        <p>子どものことを知る楽しさを届けたい。</p>
+        <p>一人で頑張りすぎているママに、安心して話せる時間を届けたい。</p>
+        <p>そして、ママ自身にも、自分の人生に希望や夢を持ってほしい。</p>
+        <p class="last"><span class="ph">そんな思いから、</span><span class="ph">CRCは生まれました。</span></p>
+      </div>
+
+      <p class="sign">
+        <span class="sign-brand">チャイルドリアリングコーチ®</span>
+        <span class="sign-name">創設者・主宰　永谷亜季子</span>
+      </p>
+
+      <div class="profile">
+        <h3>プロフィール</h3>
+        <ul>
+          <li>小学校教諭・幼稚園教諭免許／保育士資格</li>
+          <li>育児不安・イライラ専門家</li>
+          <li>子どもの行動の「なぜ？」を、発達や心理の視点から伝える活動を行う</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. 最後のメッセージ ============ -->
+<section class="sec s-final wave" aria-labelledby="h-final">
+  <div class="wrap">
+    <h2 id="h-final" class="final-copy">
+      <span class="ln">あなたの子育ても、</span>
+      <span class="ln">あなたの人生も、</span>
+      <span class="ln"><span class="em mk-teal">ここからもっと輝いていける。</span></span>
+    </h2>
+
+    <div class="final-body stack">
+      <p class="lead">子育てに、たった一つの正解はありません。</p>
+      <p class="lead">大切なのは、子どもを知り、自分を知り、<br>その家庭らしい答えを見つけていくこと。</p>
+      <p class="lead">CRCは、その歩みを応援します。</p>
+    </div>
+
+    <figure class="art blob-lav">
+      <img src="images/crc-06-path.webp" width="960" height="960" loading="lazy" decoding="async"
+           alt="やわらかな光が差す道を、手をつないで歩く母と子。">
+    </figure>
+
+    <div class="cta-wrap">
+      <p class="cta-kicker">CRC PERSONAL CONSULTATION</p>
+      <h3 class="cta-title">「私も、子育てを変えられるかな？」<br><span class="cta-title-second">その気持ちを、次の一歩に。</span></h3>
+      <p class="cta-lead">朝のイライラ、イヤイヤ期、子どもの発達への不安。<br>あるいは、ベビーマッサージから広がる学びへの興味。</p>
+      <p class="cta-emotion">あなたが今、<strong>「もっと知りたい！」</strong>と思ったことを、聞かせてください。</p>
+      <p class="cta-lead cta-explain">個別相談では、CRCで何を学べるのか、どんなふうに学ぶのか、今のあなたに必要な学びなのかを、一緒に考えていきます。</p>
+      <!-- CRC個別相談：LINE公式アカウント（@cvn4201d）へ接続 -->
+      <a id="line-cta" class="cta is-ready" href="https://line.me/R/oaMessage/%40cvn4201d/?CRC%E5%80%8B%E5%88%A5%E7%9B%B8%E8%AB%87%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E3%81%97%E3%81%8F%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99" rel="noopener" data-line-id="@cvn4201d">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 16.5h-8l-4.5 3.5v-3.5H4A1.5 1.5 0 0 1 2.5 15V7A1.5 1.5 0 0 1 4 5.5z"/></svg>
+        <span>CRCの個別相談について聞いてみる</span>
+      </a>
+      <p id="line-cta-steps" class="cta-steps">ボタンから公式LINEのトーク画面へ。<br>入力されたメッセージを送信してください。</p>
+      <div id="desktop-line-panel" class="desktop-line-panel" hidden tabindex="-1" aria-label="PCからの個別相談のご案内">
+        <h4>PCでご覧の方へ</h4>
+        <p>スマホのカメラでこのQRコードを読み取ると、<br>CRC個別相談のLINEトークに進めます。</p>
+        <img class="desktop-line-qr" src="images/crc-line-consult-qr.png" width="204" height="204" loading="lazy" alt="CRC個別相談の公式LINEトークをスマホで開くQRコード">
+        <p>トーク画面に表示される相談希望の文章を<br>送信してください。</p>
+        <span class="desktop-line-id">LINE ID：@cvn4201d</span>
+        <p class="desktop-line-hint">QRコードを読み取れない場合は、LINEでIDを検索してください。</p>
+      </div>
+      <p class="cta-assurance">ご相談いただいたからといって、受講を決める必要はありません。</p>
+      
+      <p class="cta-fallback">ボタンからトークに進めない場合は、<a href="https://line.me/R/ti/p/%40cvn4201d" rel="noopener" style="color:#245A98;font-weight:700;text-decoration:underline;text-underline-offset:3px">こちらから公式LINEを開いて</a><br>「CRC個別相談」と送ってください。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Child Rearing Coach® / CRC</p>
+</footer>
+
+<script>
+(function () {
+  var a = document.getElementById('line-cta');
+  var note = document.getElementById('cta-note');
+  if (!a) return;
+  var raw = (a.getAttribute('data-line-id') || '').trim();
+  // Basic LINE ID: @123abcde など。プレースホルダーではリンクを作らない。
+  var id = raw.replace(/^@/, '');
+  if (id !== 'LINE_ID_HERE' && /^[A-Za-z0-9_.-]{4,40}$/.test(id)) {
+    var message = 'CRC個別相談について詳しく知りたいです';
+    var url = 'https://line.me/R/oaMessage/' + encodeURIComponent('@' + id) + '/?' + encodeURIComponent(message);
+    a.setAttribute('href', url);
+    a.setAttribute('rel', 'noopener');
+    a.removeAttribute('aria-disabled');
+    a.removeAttribute('role');
+    a.classList.add('is-ready');
+    if (note) note.hidden = true;
+    // LINE公式トークへのURLスキームはスマートフォン対応。PCにはQRコードを表示。
+    var isMobileLine = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (!isMobileLine) {
+      var pcPanel = document.getElementById('desktop-line-panel');
+      var steps = document.getElementById('line-cta-steps');
+      a.setAttribute('href', '#desktop-line-panel');
+      a.setAttribute('aria-controls', 'desktop-line-panel');
+      a.setAttribute('aria-expanded', 'false');
+      if (steps) steps.textContent = 'PCからの方は、ボタンを押すとスマホ用QRコードが表示されます。';
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (pcPanel) {
+          pcPanel.hidden = false;
+          a.setAttribute('aria-expanded', 'true');
+          pcPanel.focus({preventScroll:true});
+          pcPanel.scrollIntoView({behavior:'smooth',block:'center'});
+        }
+      });
+    }
+  } else {
+    a.addEventListener('click', function (e) { e.preventDefault(); });
+  }
+})();
+</script>
+</body>
+</html>
